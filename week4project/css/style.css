@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent Marker|Nunito|Black Han Sans|San-Serif');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Nunito|Permanent+Marker&display=swap');
 
 
 
@@ -15,7 +15,7 @@
 body {
     max-width: 960px;
     margin: 0 auto;
-    background-color: #459ACC;
+    background-color: var(--primary-color);
     padding: 1em;
     height: 100%;
     text-align: center;
@@ -34,7 +34,7 @@ img {
 }
 
 h1 {
-    font-family: Permanent Marker;
+    font-family: 'Permanent Marker',cursive;
     color: black;
     font-style: italic;
     font-size: 3rem;
@@ -56,19 +56,19 @@ h1 {
 }
 
 h2 {
-    font-family: Nunito;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
     font-size: 2rem;
     color: blue;
 }
 
 h3 {
-    font-family: Black Han Sans;
+    font-family: 'Black Han Sans',sans-serif;
     color: blue;
     font-size:1.4rem;
 }
 
 h4 {
-    font-family: Black Han Sans;
+    font-family: 'Black Han Sans',sans-serif;
     color: black;
 }
 
