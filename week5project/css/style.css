@@ -13,18 +13,21 @@
 body {
     max-width: 960px;
     margin: 0 auto;
-    background-color: #459ACC;
     padding: 1em;
     height: 100%;
     text-align: center;
     align-content: center;
+    align-items:center;
 font-size: 16px;
+background: linear-gradient( dodgerblue , blue);
+
 }
+
 
 
 html {
     height: 100%;
-
+   
 }
 
 img {
@@ -47,36 +50,39 @@ h1 {
 
 @keyframes blinkingText{
     0%{     color: #000;    }
-    49%{    color:grey; }
-    60%{    color: yellow; }
-    99%{    color:white;  }
-    100%{   color: #000;    }
+    49%{    color:gr#4106FF; }
+    60%{    color: dodgerblue; }
+    100%{   color: #FFDF00;    }
 }
 
-
+.headings {
+    display: flex;
+    flex-direction: column;
+}
 
 h2 {
     font-family: 'Nunito', sans-serif;
     font-size:2rem;
-    color: blue;
+    color: whitesmoke;
 }
 
 h3 {
     font-family:'Black Han Sans', sans-serif;
-    color: blue;
+    color: whitesmoke;
     font-size:1.4rem;
 }
 
 h4 {
     font-family:'Black Han Sans', sans-serif;
-    color: black;
+    color: whitesmoke;
 }
 
 header {
+    border-style:groove;
     padding: 1em;
     text-align: center;
     color: white;
-    background-color: orange;
+    background: linear-gradient( yellow , gold);
 
 }
 
@@ -90,12 +96,16 @@ header>picture {
     vertical-align: text-top;
 }
 
-nav {
-    background-color: orange;
+nav { max-width:500px;
+    margin:auto;
+    border-style:groove;
+    background: linear-gradient(gold,yellow);    
     line-height: 3em;
-    text-align: center;
     font-size: 1.2em;
-    align-content: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
 }
 
 nav>ul {
@@ -115,16 +125,17 @@ nav a:visited {
 
 nav a:hover {
     color: blue;
-    background-color: orange;
+    background-color: 639833;
 }
 
 p {
-    font-family: Nunito;
-    color: black;
+    font-family: 'Nunito';
+    color: white;
     padding: 1em
 }
 
 .griditem {
+    border: 5px ridge #639833;
 
 }
 
@@ -176,4 +187,6 @@ p {
 
 .social {
     text-align: center;
+    align-content:center;
+    border: 3px solid green;
 }
