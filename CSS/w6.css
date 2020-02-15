@@ -34,7 +34,7 @@ body {
 }
 
 .gold2 {
-  width: 100px;
+  width:100px;
   height: 100px;
   background-color: gold;
   position: absolute;
@@ -120,4 +120,4 @@ body {
   width: 300px;
   height: 100px;
   background-color: blue;
- 
+}
