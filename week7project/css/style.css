@@ -31,7 +31,7 @@ html {
 }
 
 p {
-    font-style: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
 }
 
@@ -56,7 +56,7 @@ h1 {
     }
 
     49% {
-        color: gr#4106FF;
+        color: #4106FF;
     }
 
     60% {
@@ -206,7 +206,6 @@ nav {
     font-size: 1.2em;
     display: grid;
     justify-content: left;
-    align-items: left;
 
 }
 
@@ -231,7 +230,7 @@ nav a:visited {
 
 nav a:hover {
     color: dodgerblue;
-    background-color: 639833;
+    background-color: blue;
 }
 
 
