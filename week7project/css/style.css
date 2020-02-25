@@ -22,7 +22,10 @@ body {
 header,
 footer,
 nav {
-    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    align-items:center;
+    max-width: 960px;
 }
 
 html {
@@ -47,10 +50,11 @@ h1 {
 .motto {
     text-shadow: .05px 1px black;
     font-size: 1.5rem;
-    animation: blinkingText 1.2s infinite;
+   /** animation: blinkingText 1.2s infinite;
+**/
 }
 
-@keyframes blinkingText {
+/**@keyframes blinkingText {
     0% {
         color: #000;
     }
@@ -67,24 +71,23 @@ h1 {
         color: #FFDF00;
     }
 }
-
+**/
 .banner-box img {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
-    height: auto;
-}
+    width: 960px;
+    margin:0 auto;
 
-.banner-box img {
     grid-column: 1 / -1; /* the -1 is just a fancy way to say "span all the columns" */
     grid-row: 1;
 }
 
+
 .home-grid {
     display: grid;
-    width:100%;
+    width:960px;
     grid-gap:10px;
-   
+   margin:0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     
 
@@ -106,14 +109,10 @@ h1 {
 }
 
 .home-right-img {
-    height: auto;
-    max-height: 100%;
     width: auto;
-    max-width: 100%;
     grid-column: 4 / 6;
     grid-row: 1 / 3;
     justify-self:end;
-    padding:0px;
     
     
 }
@@ -184,6 +183,10 @@ header {
     color: white;
     background: linear-gradient(yellow, gold);
     text-align: center;
+    margin:0 auto;
+    align-items:center;
+
+
 
 }
 
