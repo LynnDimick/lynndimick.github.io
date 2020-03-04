@@ -16,11 +16,10 @@ body {
     align-items: center;
     font-size: 16px;
     background: linear-gradient(blue, dodgerblue);
-
 }
 
 header,
-footer,
+footer,main,
 nav {
     padding: 0;
     margin: 0 auto;
@@ -35,67 +34,52 @@ html {
 
 p {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 h1 {
     font-family: 'Permanent Marker', 'Nunito', sans-serif;
     color: black;
     font-style: italic;
-    font-size: 3.4rem;
+    font-size: 2.4rem;
     text-shadow: 1px 3px white;
     padding:0;
-
 }
 
 .motto {
     text-shadow: .05px 1px black;
     font-size: 1.5rem;
-   /** animation: blinkingText 1.2s infinite;
-**/
 }
 
-/**@keyframes blinkingText {
-    0% {
-        color: #000;
-    }
-
-    49% {
-        color: #4106FF;
-    }
-
-    60% {
-        color: dodgerblue;
-    }
-
-    100% {
-        color: #FFDF00;
-    }
+.banner-box {
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap:0px;
+grid-row-gap:0px;
 }
-**/
-.banner-box img {
+
+.banner-box img 
+{
     background-image: linear-gradient(red, yellow);
     display: grid;
     font-family:"Nunito";
-    grid-template-columns: 1fr 1fr;
-    width: 960px;
+    grid-template-columns: 1 / 1 /2 /3;
+    width: 100%;
     margin:0 auto;
-
-    grid-column: 1 / -1; /* the -1 is just a fancy way to say "span all the columns" */
+    grid-column: 1 / -1; 
     grid-row: 1;
 }
 
 
 .home-grid {
     display: grid;
-    width:960px;
-    grid-gap:10px;
-   margin:0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
-
-    
-
+    grid-column-gap:1rem;
+    grid-row-gap:1rem;
+    margin:0 auto;
+    grid-template-columns: repeat(5, 1fr);    
+    grid-row-template: repeat(5, auto);
+    padding:2rem;
 }
 
 .home-headline-1 {
@@ -112,13 +96,16 @@ h1 {
 }
 
 .home-right-img {
-    grid-area: 1 / 4 / 3 / 6; 
-    border: 1px solid #ccc;
-    padding: 1rem;    
-    max-width:100%;
-    
+    grid-area: 1 / 4 / 3 / 6;  
 }
+.home-grid img {
+width:100%;
+height:auto;
+border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;
 
+}
 .home-headline-2 {
     grid-column: 3 / 6;
     grid-row: 3 / 4;
@@ -126,14 +113,15 @@ h1 {
 }
 
 .home-paragraph-2 {
-    grid-column: 4 / 6;
+    grid-column: 3 / 6;
     grid-row: 4 / 5;
 }
 
 .home-left-img {
     grid-column: 1 / 3;
     grid-row: 3 / 5;
-
+height:100%;
+    width:auto;
 }
 
 .home-paragraph-3 {
@@ -153,16 +141,10 @@ h1 {
 
 }
 
-.home-left-img,
-.home-right-img {
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 5px 5px 5px #999;
-}
 
 h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: whitesmoke;
     border-style: solid none solid;
 }
@@ -170,7 +152,7 @@ h2 {
 h3 {
     font-family: 'Nunito', sans-serif;
     color: black;
-    font-size: 2rem;
+    font-size: 1.3rem;
     max-width:960px;
 }
 
@@ -196,12 +178,6 @@ header {
 header>h1 {
     color: red;
 }
-
-.heading {
-    /**height:100x;**/
-}
-
-
 
 nav {
 
@@ -253,7 +229,7 @@ p {
     width:100%;
     grid-gap:10px;
    
-    grid-template-columns: 80% auto auto auto;
+    grid-template-columns: 70% auto auto auto;
 
     text-align: right;
     border: 3px solid green;
@@ -270,23 +246,24 @@ align-items:center;
 }
 
 .action {
-          background-image: linear-gradient(red, yellow);
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    max-width:960px;
-    align-items: center;
-    text-shadow: 1px 1px yellow;
-
+grid-area: 1/1/2/2;
+background-color: #F2F2F2;
+opacity: 0.8;
+height : 150px;
+width:150px;
+padding: 2rem 4rem;
+justify-self:center;
+align-self:center;
 }
 
 .btn {
 border: 4px solid black;
   background-color: lightgrey;
   color: white;
-  padding: 7px 14px;
-  font-size: 36px;
-  cursor: pointer;
+  padding:.3rem;
+  text-decoration:none;
+  font-size: 1rem;
+  
 }
 
 .contact {
