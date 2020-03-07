@@ -63,7 +63,7 @@ grid-row-gap:0px;
     background-image: linear-gradient(red, yellow);
     display: grid;
     font-family:"Nunito";
-    grid-template-columns: 1 / 1 /2 /3;
+    grid-template-columns: 1 / 1 / 2 / 3 ;
     width: 100%;
     margin:0 auto;
     grid-column: 1 / -1; 
@@ -91,7 +91,10 @@ grid-row-gap:0px;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
     padding: 0px;
+}
 
+a {
+    color:red;
 }
 
 .home-right-img {
@@ -298,4 +301,6 @@ border: 4px solid black;
     margin:0;
   }
   
-  
+  .mail{
+      color:white;
+  }
