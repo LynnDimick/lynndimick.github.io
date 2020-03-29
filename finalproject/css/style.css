@@ -94,7 +94,7 @@ grid-row-gap:0px;
 }
 
 a {
-    color:red;
+    color:yellow;
 }
 
 .home-right-img {
@@ -327,4 +327,8 @@ border: 4px solid black;
 
   .faqpage h3{
 color:whitesmoke;
+  }
+
+  .schedule a{
+      color:red;
   }
