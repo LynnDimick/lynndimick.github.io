@@ -5,7 +5,9 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-
+.centered{
+  align-items:center;
+}
 
 
 .content2 {

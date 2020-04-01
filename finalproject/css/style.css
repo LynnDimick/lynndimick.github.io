@@ -50,6 +50,10 @@ h1 {
     font-size: 1.5rem;
 }
 
+.centered {
+    text-align: center;
+}
+
 .banner-box {
 display:grid;
 grid-template-columns:repeat(2, 1fr);
@@ -332,3 +336,8 @@ color:whitesmoke;
   .schedule a{
       color:red;
   }
+
+  .ammo-pricing{
+      align-items: center;
+  }
+  
