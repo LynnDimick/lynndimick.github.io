@@ -12,16 +12,16 @@
 
 body {
     margin: 0 auto;
-    padding: 1em;
     align-items: center;
     font-size: 16px;
     background-color: #459ACC;
+    max-width:960px;
 }
 
 header,
 footer,
 main,
-nav {
+nav{
     padding: 0;
     margin: 0 auto;
     align-items: center;
