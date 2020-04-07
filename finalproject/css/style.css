@@ -303,6 +303,15 @@ p {
 .credentialspage h3 {
     border-bottom: 1px #666666 solid;
 }
+.faqpage img,
+.schedule img,
+.linkspage img,
+.credentialspage img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 .heading img {
     width: 100px;
